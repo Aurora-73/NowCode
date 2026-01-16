@@ -1,0 +1,63 @@
+BasedOnStyle: WebKit
+
+IndentWidth: 4
+TabWidth: 4
+UseTab: ForIndentation
+
+BreakTemplateDeclarations: Yes
+
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortLoopsOnASingleLine: true
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortEnumsOnASingleLine: true
+AllowShortNamespacesOnASingleLine: true
+AllowShortLambdasOnASingleLine: Inline
+
+BreakConstructorInitializers: AfterColon
+
+BreakBeforeBraces: Attach
+BraceWrapping:
+  AfterClass:        false
+  AfterControlStatement: false
+  AfterFunction:     false
+  AfterNamespace:    false
+  AfterStruct:       false
+  BeforeElse:        false
+  IndentBraces:      false
+
+IndentAccessModifiers: false
+AccessModifierOffset: -4
+
+SpaceBeforeParens: Never
+BinPackArguments: false
+BinPackParameters: false
+ 
+DerivePointerAlignment: false
+PointerAlignment: Right
+
+AlignTrailingComments: true
+ColumnLimit: 100
+PenaltyExcessCharacter: 1000
+PenaltyBreakAssignment: 5
+PenaltyBreakBeforeFirstCallParameter: 19
+
+ReflowComments: false
+SortIncludes: true
+
+IncludeCategories:
+  - Regex:           '^<.*\.h>'
+    Priority:        1
+  - Regex:           '^"(third_party|external)/'
+    Priority:        2
+  - Regex:           '^"(.*)"'
+    Priority:        3
+  - Regex:           '.*'
+    Priority:        4
+
+BreakBeforeBinaryOperators: All
+
+NamespaceIndentation: Inner
+
+NeedWhitespaceBeforeTemplateClose: true

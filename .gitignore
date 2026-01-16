@@ -1,0 +1,13 @@
+*.exe
+cmake-build-debug/
+build/
+.vs/
+.idea/
+autogit.bat
+CMakeLists.txt
+.history/
+test*
+text.txt
+*.a
+*.dll
+lcpr/
